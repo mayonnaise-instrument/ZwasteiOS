@@ -1,0 +1,6 @@
+framework module Pods_Zwaste {
+  umbrella header "Pods-Zwaste-umbrella.h"
+
+  export *
+  module * { export * }
+}

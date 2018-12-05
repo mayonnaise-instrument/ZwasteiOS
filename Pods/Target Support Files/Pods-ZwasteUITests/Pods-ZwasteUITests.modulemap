@@ -1,0 +1,6 @@
+framework module Pods_ZwasteUITests {
+  umbrella header "Pods-ZwasteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
