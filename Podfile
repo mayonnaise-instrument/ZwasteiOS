@@ -9,6 +9,7 @@ target 'Zwaste' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
   target 'ZwasteTests' do
     inherit! :search_paths

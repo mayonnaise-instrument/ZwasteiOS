@@ -21,6 +21,10 @@
 		C699405021A85C3900C076A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C699404F21A85C3900C076A5 /* GoogleService-Info.plist */; };
 		C699405121A85C3900C076A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C699404F21A85C3900C076A5 /* GoogleService-Info.plist */; };
 		C699405221A85C3900C076A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C699404F21A85C3900C076A5 /* GoogleService-Info.plist */; };
+		C6CCCC3121B83D1000E25C1C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCCC3021B83D1000E25C1C /* HomeVC.swift */; };
+		C6CCCC3321B866A300E25C1C /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCCC3221B866A300E25C1C /* TrackerVC.swift */; };
+		C6CCCC3521B86E5800E25C1C /* TrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCCC3421B86E5800E25C1C /* TrackerTableViewCell.swift */; };
+		C6CCCC3721BA0B6400E25C1C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CCCC3621BA0B6400E25C1C /* LocationModel.swift */; };
 		C6ED83A821A87047001EEE6D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6ED83A621A87047001EEE6D /* DLRadioButton.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		C699404121A85AC600C076A5 /* ZwasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZwasteUITests.swift; sourceTree = "<group>"; };
 		C699404321A85AC600C076A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C699404F21A85C3900C076A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6CCCC3021B83D1000E25C1C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C6CCCC3221B866A300E25C1C /* TrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerVC.swift; sourceTree = "<group>"; };
+		C6CCCC3421B86E5800E25C1C /* TrackerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTableViewCell.swift; sourceTree = "<group>"; };
+		C6CCCC3621BA0B6400E25C1C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		C6ED83A521A87047001EEE6D /* Zwaste-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zwaste-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6ED83A621A87047001EEE6D /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		C6ED83A721A87047001EEE6D /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
@@ -150,6 +158,10 @@
 				C699401E21A85AC400C076A5 /* AppDelegate.swift */,
 				C699402021A85AC400C076A5 /* ViewController.swift */,
 				C699402221A85AC400C076A5 /* Main.storyboard */,
+				C6CCCC3421B86E5800E25C1C /* TrackerTableViewCell.swift */,
+				C6CCCC3621BA0B6400E25C1C /* LocationModel.swift */,
+				C6CCCC3221B866A300E25C1C /* TrackerVC.swift */,
+				C6CCCC3021B83D1000E25C1C /* HomeVC.swift */,
 				C699402821A85AC600C076A5 /* Assets.xcassets */,
 				C699402A21A85AC600C076A5 /* LaunchScreen.storyboard */,
 				C699402D21A85AC600C076A5 /* Info.plist */,
@@ -326,6 +338,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Zwaste/Pods-Zwaste-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -334,6 +347,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +428,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CCCC3721BA0B6400E25C1C /* LocationModel.swift in Sources */,
 				C699402721A85AC400C076A5 /* Zwaste.xcdatamodeld in Sources */,
+				C6CCCC3521B86E5800E25C1C /* TrackerTableViewCell.swift in Sources */,
+				C6CCCC3321B866A300E25C1C /* TrackerVC.swift in Sources */,
+				C6CCCC3121B83D1000E25C1C /* HomeVC.swift in Sources */,
 				C6ED83A821A87047001EEE6D /* DLRadioButton.m in Sources */,
 				C699402121A85AC400C076A5 /* ViewController.swift in Sources */,
 				C699401F21A85AC400C076A5 /* AppDelegate.swift in Sources */,
