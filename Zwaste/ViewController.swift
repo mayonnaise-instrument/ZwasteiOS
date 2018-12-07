@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var feedbackMessage: UILabel!
     @IBAction func loginButtonClicked(_ sender: Any) {
         login()
-        self.performSegue(withIdentifier: "loginButtonSegue", sender: self)
     }
     //Outlets for the signup page and signup fun (su = signup):
     @IBOutlet weak var suNameField: UITextField!
@@ -73,7 +72,7 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: self.emailField.text!, password: self.passwordField.text!) { (user, error) in
                 if error == nil {
                     self.feedbackMessage.text = "You have successfully logged in."
-                    //ADD SEGUE HERE
+                    self.performSegue(withIdentifier: "loginButtonSegue", sender: self)
                 } else {
                     self.feedbackMessage.text = "Login failed. Please try again."
                 }

@@ -51,7 +51,6 @@ class TrackerVC: UITableViewController {
         return locationList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cellIdentifier = "TrackerTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackerTableViewCell", for: indexPath) as! TrackerTableViewCell
@@ -109,6 +108,7 @@ class TrackerVC: UITableViewController {
         if segue.identifier == "backButtonSegue" {
             
         }
+
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }

@@ -10,6 +10,7 @@
 		234CB3C19296F68B0167F1E4 /* Pods_Zwaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09359F864FEBFA79C233634B /* Pods_Zwaste.framework */; };
 		4CB1C35008E7C3B3B9C244DC /* Pods_ZwasteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD8A997E75E0609AEFD17F3 /* Pods_ZwasteUITests.framework */; };
 		87A3AE38D3F723111DBCA393 /* Pods_ZwasteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E08B3D81F5A8C2A56A4C14 /* Pods_ZwasteTests.framework */; };
+		C6357A7921BADF7600308D1C /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6357A7821BADF7600308D1C /* LocationVC.swift */; };
 		C699401F21A85AC400C076A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699401E21A85AC400C076A5 /* AppDelegate.swift */; };
 		C699402121A85AC400C076A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699402021A85AC400C076A5 /* ViewController.swift */; };
 		C699402421A85AC400C076A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C699402221A85AC400C076A5 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		9DD8A997E75E0609AEFD17F3 /* Pods_ZwasteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZwasteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6394D610CAA606A2102407B /* Pods-ZwasteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwasteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZwasteUITests/Pods-ZwasteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7E02818BA91802A0F6D5B9 /* Pods-Zwaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zwaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zwaste/Pods-Zwaste.debug.xcconfig"; sourceTree = "<group>"; };
+		C6357A7821BADF7600308D1C /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		C699401B21A85AC400C076A5 /* Zwaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zwaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C699401E21A85AC400C076A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C699402021A85AC400C076A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				C699401E21A85AC400C076A5 /* AppDelegate.swift */,
 				C699402021A85AC400C076A5 /* ViewController.swift */,
 				C699402221A85AC400C076A5 /* Main.storyboard */,
+				C6357A7821BADF7600308D1C /* LocationVC.swift */,
 				C6CCCC3421B86E5800E25C1C /* TrackerTableViewCell.swift */,
 				C6CCCC3621BA0B6400E25C1C /* LocationModel.swift */,
 				C6CCCC3221B866A300E25C1C /* TrackerVC.swift */,
@@ -430,6 +433,7 @@
 			files = (
 				C6CCCC3721BA0B6400E25C1C /* LocationModel.swift in Sources */,
 				C699402721A85AC400C076A5 /* Zwaste.xcdatamodeld in Sources */,
+				C6357A7921BADF7600308D1C /* LocationVC.swift in Sources */,
 				C6CCCC3521B86E5800E25C1C /* TrackerTableViewCell.swift in Sources */,
 				C6CCCC3321B866A300E25C1C /* TrackerVC.swift in Sources */,
 				C6CCCC3121B83D1000E25C1C /* HomeVC.swift in Sources */,
